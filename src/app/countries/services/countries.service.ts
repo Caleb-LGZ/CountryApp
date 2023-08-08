@@ -25,8 +25,8 @@ export class CountriesService {
     }
 
     private loadFromLocalStorage() {
-        if( !localStorage.getItem('cacheStorage') ) return;
-        this.cacheStore = JSON.parse( localStorage.getItem('cacheStorage')! );
+        if( !localStorage.getItem('cacheStore') ) return;
+        this.cacheStore = JSON.parse( localStorage.getItem('cacheStore')! );
     }
 
     private getCountriesRequest( url: string ): Observable<Country[]> {
